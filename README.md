@@ -23,5 +23,6 @@ After the length of the password is chosen, a series of prompts will be presente
 ## Link 
 
 ## License
+[MIT LICENSE](https://raw.githubusercontent.com/Ruskin20/password-generator/main/LICENSE)
 
 
