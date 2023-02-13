@@ -23,7 +23,7 @@ After the length of the password is chosen, a series of prompts will be presente
 ## Link 
 You could access the deployed application by clicking on the link below. 
 
-[Password Generator}(https://ruskin20.github.io/Password-Generator/)
+[Password Generator](https://ruskin20.github.io/Password-Generator/)
 
 ## License
 [MIT LICENSE](https://raw.githubusercontent.com/Ruskin20/password-generator/main/LICENSE)
