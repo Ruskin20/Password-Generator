@@ -12,12 +12,13 @@ var specialcharacters = [" ", "!", "\"", "#", "$", "%", "&", "\'", "(", ")", "*"
 var passwordLength = 8;
 // Empty array for filling with characters
 var pwdArray = [];
-// Empty string to return
+
 
 
 
 // String that generates password
 function generatePassword() {
+  // Empty string to return
   var password = "";
 
   var length = parseInt(window.prompt("How many characters would you like to contain?"));
@@ -26,19 +27,19 @@ function generatePassword() {
 
   };
 
-  if (confirm("Press OK if you want to include Lowercase Letters") == true) {
+  if (confirm("Press OK if you want to include Lowercase Letters.") == true) {
     password += getRandomChar(lowercase)
     pwdArray = pwdArray.concat(lowercase);
   };
-  if (confirm("Press OK if you want to include Uppercase Letters") == true) {
+  if (confirm("Press OK if you want to include Uppercase Letters.") == true) {
     password += getRandomChar(uppercase)
     pwdArray = pwdArray.concat(uppercase);
   };
-  if (confirm("Press OK if you want to include Special Characters") == true) {
+  if (confirm("Press OK if you want to include Special Characters.") == true) {
     password += getRandomChar(specialcharacters)
     pwdArray = pwdArray.concat(specialcharacters);
   };
-  if (confirm("Press OK if you want to include Numbers") == true) {
+  if (confirm("Press OK if you want to include Numbers.") == true) {
     password += getRandomChar(numbers)
     pwdArray = pwdArray.concat(numbers);
   };
@@ -50,7 +51,7 @@ function generatePassword() {
   return password;
 
 }
-
+// Function to generate random characters
 function getRandomChar(arr) {
   var randomIndex = Math.floor(Math.random() * arr.length);
   return arr[randomIndex]
